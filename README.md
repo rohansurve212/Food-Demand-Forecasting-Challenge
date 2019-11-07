@@ -1,6 +1,12 @@
-Food_Demand_Forecasting_Challenge
-==============================
+**Genpact Machine Learning Hackathon**
+competition link
 
+Root of Mean Squared Logarithmic Error : 0.61
+
+Private Leader Board Rank : 456/7848
+
+Libraries used:
+pandas, numpy, catboost, scikit learn, matplotlib, seaborn
 Problem Statement
 Your client is a meal delivery company which operates in multiple cities. They have various fulfillment centers in these cities for dispatching meal orders to their customers. The client wants you to help these centers with demand forecasting for upcoming weeks so that these centers will plan the stock of raw materials accordingly.
 
@@ -39,13 +45,10 @@ The evaluation metric for this competition is 100*RMSLE where RMSLE is Root of M
 Test data is further randomly divided into Public (30%) and Private (70%) data.
 
 Solution
-    Converted this time series problem to regression problem.
-
-    
+Converted this time series problem to regression problem.
 Data transformation:
 Here number of orders placed (target variable) is highly right skewd so that Log transformation is applied.
 Log transformation of base_price, checkout_price, and num_orders.
-
 Feature engineering:
 For every record difference between base_price and checkout_price.
 Differenc of previous week checkout_price and current weeks checkout_price.

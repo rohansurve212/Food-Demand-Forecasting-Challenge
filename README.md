@@ -22,33 +22,30 @@ Information for fulfillment center like center area, city information etc.
 
 ***Data Dictionary:***
 Weekly Demand data (train.csv): Contains the historical demand data for all centers, test.csv contains all the following features except the target variable.
-|`Variable`	           |`Definition`                                            |
-|:-------------------- |:------------------------------------------------------ |
-|id	                   |Unique ID                                               |
-|week	               |Week No                                                 |
-|center_id	           |Unique ID for fulfillment center                        |
-|meal_id	           |Unique ID for Meal                                      |
-|checkout_price	       |Final price including discount, taxes & delivery charges|
-|base_price	           |Base price of the meal                                  |
-|emailer_for_promotion |Emailer sent for promotion of meal                      |
-|homepage_featured     |Meal featured at homepage                               |
-|num_orders	(Target)   |Orders Count                                            |
+`Variable`               ---- `Definition`
+1. id	                   ---- Unique ID
+2. week                  ---- Week No                                                 |
+3. center_id	           ---- Unique ID for fulfillment center                        
+4. meal_id	             ---- Unique ID for Meal                                      
+5. checkout_price	       ---- Final price including discount, taxes & delivery charges
+6. base_price	           ---- Base price of the meal                                  
+7. emailer_for_promotion ---- Emailer sent for promotion of meal 
+8. homepage_featured     ---- Meal featured at homepage                               
+9. num_orders	(Target)   ---- Orders Count                                            
 
 fulfilment_center_info.csv: Contains information for each fulfilment center
-|`Variable`	    |`Definition`                    |
-|:--------------|:-------------------------------|
-|center_id	    |Unique ID for fulfillment center|
-|city_code	    |Unique code for city            |
-|region_code	|Unique code for region          |
-|center_type	|Anonymized center type          |
-|op_area	    |Area of operation (in km^2)     |
+`Variable`	    `Definition`                    
+1. center_id   ---- Unique ID for fulfillment center
+2. city_code   ---- Unique code for city            
+3. region_code ---- Unique code for region          
+4. center_type ---- Anonymized center type          
+5. op_area	   ---- Area of operation (in km^2)     
 
 meal_info.csv: Contains information for each meal being served
-|`Variable`	|`Definition`                           |
-|:----------|:------------------------------------- |
-|meal_id	|Unique ID for the meal                 |
-|category	|Type of meal (beverages/snacks/soups….)|
-|cuisine	|Meal cuisine (Indian/Italian/…)        |
+`Variable`  ---- `Definition`                           
+1. meal_id  ---- Unique ID for the meal                 
+2. category	---- Type of meal (beverages/snacks/soups….)
+3. cuisine	---- Meal cuisine (Indian/Italian/…)        
 
 ***Evaluation Metric:***
 The evaluation metric for this competition is 100*RMSLE where RMSLE is Root of Mean Squared Logarithmic Error across all entries in the test set.

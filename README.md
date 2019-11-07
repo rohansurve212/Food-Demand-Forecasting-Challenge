@@ -21,7 +21,7 @@ Information for fulfillment center like center area, city information etc.
 
 
 ***Data Dictionary:***
-Weekly Demand data (train.csv): Contains the historical demand data for all centers, test.csv contains all the following features except the target variable.
+Weekly Demand data (train.csv): Contains the historical demand data for all centers, test.csv contains all the following features except the target variable. <br/>
 `Variable`               ---- `Definition`
 1. id	                   ---- Unique ID
 2. week                  ---- Week No                                                 |
@@ -33,15 +33,15 @@ Weekly Demand data (train.csv): Contains the historical demand data for all cent
 8. homepage_featured     ---- Meal featured at homepage                               
 9. num_orders	(Target)   ---- Orders Count                                            
 
-fulfilment_center_info.csv: Contains information for each fulfilment center
-`Variable`	    `Definition`                    
+fulfilment_center_info.csv: Contains information for each fulfilment center <br/>
+`Variable` ---- `Definition`                    
 1. center_id   ---- Unique ID for fulfillment center
 2. city_code   ---- Unique code for city            
 3. region_code ---- Unique code for region          
 4. center_type ---- Anonymized center type          
 5. op_area	   ---- Area of operation (in km^2)     
 
-meal_info.csv: Contains information for each meal being served
+meal_info.csv: Contains information for each meal being served <br/>
 `Variable`  ---- `Definition`                           
 1. meal_id  ---- Unique ID for the meal                 
 2. category	---- Type of meal (beverages/snacks/soups….)
@@ -62,7 +62,7 @@ Log transformation of base_price, checkout_price, and num_orders.
 
 ***Feature engineering:***
 A major focus of my project was to do very effective feature engineering. I explored the relationships between different features.
-1. Features on different meals, different centers, and their combinations
+1. Features on different meals, different centers, and their combination
 2. Temporal Features
 
 

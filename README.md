@@ -24,7 +24,7 @@ Information for fulfillment center like center area, city information etc.
 Weekly Demand data (train.csv): Contains the historical demand data for all centers, test.csv contains all the following features except the target variable. <br/>
 `Variable`               ---- `Definition`
 1. id	                   ---- Unique ID
-2. week                  ---- Week No                                                 |
+2. week                  ---- Week No                                                 
 3. center_id	           ---- Unique ID for fulfillment center                        
 4. meal_id	             ---- Unique ID for Meal                                      
 5. checkout_price	       ---- Final price including discount, taxes & delivery charges
